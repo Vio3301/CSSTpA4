@@ -1,0 +1,35 @@
+$color-dark: #333;
+
+body{
+    background-color: $color-dark;
+    font-family: 'Open Sans', sans-serif;
+    perspective: 500px;
+    height: 100vh;
+}
+
+#carusel{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: slateblue;
+    transform: rotateX(70deg);  
+     perspective: 500px;
+    
+    figure{
+        transform: rotateX(-45deg) scaleY(3);
+        transform-origin: bottom;
+        position: absolute;
+        &:nth-child(1) .reflection{
+           width: 100px;
+           height: 100px;
+           background-color:red;
+        }
+
+      }
+}
+
